@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# Large or regenerable outputs: keep figures and metrics in git, not point clouds or caches.
+*.ply
+*.pth
+checkpoints/
+results/**/cache/
+
+# Personal photos are added deliberately (after stripping location EXIF), never by accident.
+data/my_scene/ground/*
+!data/my_scene/ground/.gitkeep

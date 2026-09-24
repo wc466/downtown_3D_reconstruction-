@@ -1,0 +1,19 @@
+# Tested together (CPU smoke test, Python 3.11). On Linux/WSL2 the PyPI torch 2.5.1 wheel
+# is the CUDA 12.4 build and bundles its CUDA libraries, so no separate CUDA toolkit is needed.
+# torch is pinned below 2.6 because MASt3R's local-checkpoint loader calls torch.load without
+# weights_only=False, which 2.6 made the default.
+torch==2.5.1
+torchvision==0.20.1
+numpy==2.4.6
+scipy==1.17.1
+scikit-learn==1.9.1
+roma==1.6.1
+einops==0.8.2
+trimesh==5.1.0
+matplotlib==3.11.2
+pillow==12.3.0
+opencv-python-headless==5.0.0.93
+tqdm==4.70.1
+huggingface-hub==1.32.0
+safetensors==0.8.0
+pytest==9.1.1

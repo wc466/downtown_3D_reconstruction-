@@ -1,0 +1,3 @@
+[submodule "third_party/aerial-megadepth"]
+	path = third_party/aerial-megadepth
+	url = https://github.com/kvuong2711/aerial-megadepth.git
